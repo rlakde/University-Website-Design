@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+html { background-color: #eaeaea; }
+
+#mainwrapper {
+  font: 10pt normal Arial, sans-serif;
+  height: 200px;
+  margin: 80px auto 0 auto;
+  text-align: center;
+  width: 660px;
+}
+
+#mainwrapper .box .caption {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+}
+
+#mainwrapper .box .simple-caption {
+    height: 40px;
+    left:583px;
+    width: 200px;
+    display: block;
+    bottombottom: -30px;
+    line-height: 25pt;
+    text-align: center;
+}
+
+#mainwrapper .box:hover .simple-caption {
+    -moz-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+}
+</style>
+</head>
+<body>
+<div id="mainwrapper">
+    <div id="box-1" class="box">
+        <img id="image-1" src="http://localhost/programs/img/video.jpg" height=182px width=200px/>
+        <span class="caption simple-caption">
+        <p>Simple Caption</p>
+        </span>
+    </div>
+</div> <!-- end of #mainwrapper-->
+</body>
+<html>
+
+
+

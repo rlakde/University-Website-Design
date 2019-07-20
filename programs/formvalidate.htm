@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm()
+{
+var x=document.forms["myForm"]["fname","lname","adress"].value;
+var y=document.forms["myForm"]["email"].value;
+var p=document.forms["myForm"]["pin"].value;
+var s=str.length;
+var atpos=y.indexOf("@");
+var dotpos=y.lastIndexOf(".");
+
+if (x==null || x=="")
+  {
+  alert("Required must be filled out");
+  return false;
+  }
+
+if (y==null || y=="")
+   {
+    alert("Please fill email address");
+    return false;
+    }
+if ( atpos==0 || dotpos+2>=x.length || dotpos<=atpos+2 )
+   {
+   alert("please enter valid email id");
+   return false;
+   }
+
+}
+</script>
+<style>
+center
+{
+text-align:center;
+line-height:300%;
+font-size:20px;
+}
+</style>
+</head>
+<body>
+<center>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+First name: <input type="text" name="fname"><br>
+Last name : <input type="text" name="lname"><br>
+Email: <input type="text" name="email"><br>
+year: <input type="date" name="year"><br>
+adress:<input type="text" name="adress"><br>
+
+<input type="submit" value="Submit">
+</form>
+</center>
+</body>
+
+</html>

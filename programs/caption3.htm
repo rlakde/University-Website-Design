@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+html { background-color: #eaeaea; }
+
+#mainwrapper {
+  font: 10pt normal Arial, sans-serif;
+  height: auto;
+  margin: 80px auto 0 auto;
+  text-align: center;
+  width: 660px;
+}
+
+#mainwrapper .box .caption {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+}
+#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption {
+    opacity: 0;
+    width: 170px;
+    height: 170px;
+    text-align: left;
+    padding: 15px;
+}
+
+#mainwrapper .box:hover .fade-caption {
+    opacity: 1;
+}
+
+</style>
+</head>
+<body>
+ <!-- Image Caption 3 -->
+    <div id="box-3" class="box">  
+        <img id="image-3" src="http://localhost/programs/img/video.jpg" height=182px width=200px/>
+        <span class="caption fade-caption">  
+        <h3>Fade Caption</h3>  
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>  
+        </span>
+    </div>
+</body>
+<html>
+
+
+

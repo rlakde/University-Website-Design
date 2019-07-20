@@ -1,0 +1,21 @@
+<html>
+    <head>  
+        <title>Your website</title>  
+        <script type="text/javascript" src="audio-player.js"></script>  
+        <script type="text/javascript">  
+            AudioPlayer.setup(""%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe" /prefetch:1", {  
+                width: 290
+            });
+
+            function moo() {
+                AudioPlayer.embed("player", {soundFile: "http://localhost/programs/img/enthu.jpg/away.mp3", autostart: 'yes'});
+            }
+
+
+        </script>    
+    </head>
+    <body>
+        <div id="player"></div><br />
+        <a href="#" onClick="moo();">play file 1</a><br />
+    </body>
+</html>

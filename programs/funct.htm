@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function hello()
+{
+alert("Hello World!");
+}
+function myFunction1(name,job)
+{
+alert("Welcome " + name + ", the " + job);
+}
+
+</script>
+</head>
+
+<body>
+<p id="demo"></p>
+<script>
+function product(a,b)
+{
+return a*b;
+}
+document.getElementById("demo").innerHTML=product(4,3);
+</script>
+<button type="button" onclick="hello()">hello </button>
+<button onclick="myFunction1('Harry Potter','Wizard')">Click for Harry Potter</button>
+<button onclick="myFunction1('Bob','Builder')">Click for Bob</button>
+</body>
+</html>

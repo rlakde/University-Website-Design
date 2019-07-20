@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+center
+{
+text-align:center;
+line-height:200%;
+font-size:20px;
+}
+</style>
+<script>
+function validateForm()
+{
+var x=document.forms["myForm"]["fname","lname","address"].value;
+var y=document.forms["myForm"]["email"].value;
+var z=document.forms["myForm"]["pin"].value;
+atpos=y.indexOf("@");
+dotpos=y.lastIndexOf(".");
+if (x==null || x=="")
+  {
+  alert("All fields must be filled out");
+  return false;
+  }
+
+ if (y==null || y=="")
+ {
+ alert("Please Enter Email");
+ return false;
+ }
+ if ( atpos==0 || dotpos+2>y.length || atpos+2>dotpos)
+ {
+ alert("Enter Valid email id");
+ return false;
+ }
+ if (z==null || z==""  )
+ {
+  alert("Enter pin code");
+  return false;
+ }
+
+
+}
+</script>
+</head>
+<body>
+<center>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+First name: <input type="text" name="fname"><br>
+Last name : <input type="text" name="lname"><br>
+email : <input type="text" name="email"><br>
+Address :<input type="text" name="address"><br>
+date of birth:<input type="date" name="date"> <br>
+pin: <input type="number" name="pin"><br>
+<input type="submit" value="Submit">
+</form>
+</center>
+</body>
+
+</html>
